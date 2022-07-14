@@ -1,0 +1,9 @@
+Port: 3000
+URLInfos:
+  - URL: "127.0.0.1:5001"
+    HealthcheckPath: "check.php"
+  - URL: "127.0.0.1:5002"
+    HealthcheckPath: "healthcheck"
+  - URL: "127.0.0.1:5003"
+    HealthcheckPath: "check"
+HealthcheckInterval: 5
