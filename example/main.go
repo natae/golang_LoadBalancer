@@ -25,14 +25,17 @@ func main() {
 	}()
 
 	go func() {
+		// Backend "First" with port: 5001, healthcheck Uri: "check.php"
 		startWebServer("First", 5001, "check.php")
 	}()
 
 	go func() {
+		// Backend "Second" with port: 5002, healthcheck Uri: "healthcheck"
 		startWebServer("Second", 5002, "healthcheck")
 	}()
 
 	go func() {
+		// Backend "Third" with port: 5001, healthcheck Uri: "check"
 		startWebServer("Third", 5003, "check")
 	}()
 
