@@ -18,5 +18,4 @@ Hello First
 # Response of "Second" backend
 $ curl -XPOST -d "" 127.0.0.1:3000/hello 
 Hello Second
-
 ```
