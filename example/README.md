@@ -1,4 +1,12 @@
 # Load balancer example
+## Diagram
+```mermaid
+graph LR
+A[Client] -->B{Load Balancer}    
+    B -->C[First backend]
+    B -->D[Second backend]
+    B -->E[Third backend]
+```
 ## Run with docker (Server)
 ```
 # Change directory for copy dependencies.
