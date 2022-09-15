@@ -2,10 +2,10 @@
 ## Diagram
 ```mermaid
 graph LR
-A[Client] -->B{Load Balancer}    
-    B -->C[First backend]
-    B -->D[Second backend]
-    B -->E[Third backend]
+A[Client] -->|127.0.0.1:3000/hello| B{Load Balancer}    
+    B -->|127.0.0.1:5001/hello| C[First backend]
+    B -->|127.0.0.1:5002/hello| D[Second backend]
+    B -->|127.0.0.1:5003/hello| E[Third backend]
 ```
 ## Run with docker (Server)
 ```
